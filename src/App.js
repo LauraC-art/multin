@@ -1,10 +1,11 @@
 import React from 'react'
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
-import { ParticlesScreen } from './ParticlesInt'
+import {ParticlesScreen} from './ParticlesInt'
 import ReactPlayer from 'react-player'
-import "./App.scss";
+import "./App.scss"
 
 // Little helpers ...
+/*asdasd*/
 const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
 
 class App extends React.Component {
@@ -33,7 +34,7 @@ class App extends React.Component {
         </div>
         
         <ParallaxLayer offset={0} speed={1} style={{ backgroundColor: '#805E73' }}/> 
-        
+
         <ParallaxLayer offset={0.2} speed={0.9} factor={3}>
           
           <div className="Container__images">            

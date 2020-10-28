@@ -7,7 +7,6 @@ export const ParticlesScreen = (props) => {
           textAlign: "center"
         }}
       >
-        {/* <h1>FONDO CON PARTICLES.JS</h1> */}
       </div>
 
       <Particles
