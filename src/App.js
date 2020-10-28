@@ -31,7 +31,7 @@ class App extends React.Component {
         </div>
         <ParallaxLayer offset={0} speed={1} style={{ backgroundColor: '#805E73' }}/> 
         
-        <ParallaxLayer offset={0.3} speed={0.3} factor={3}>
+        <ParallaxLayer offset={0.2} speed={0.9} factor={3}>
           <img className="Container__images" src="https://brandemia.org/sites/default/files/sites/default/files/grupo_imagen_logo.jpg"/>
           <div className="Container__images">
             <div className="Typos__titles">
