@@ -6,6 +6,7 @@ import "./App.scss";
 
 // Little helpers ...
 const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
+
 class App extends React.Component {
   render () {
     return (
@@ -15,6 +16,7 @@ class App extends React.Component {
           <div style={{
             position: "relative",
             paddingTop: "56.25%" }}>
+
             <ReactPlayer
               url='https://www.youtube.com/watch?v=UaTcNdy8v_g'
               style={{
@@ -29,25 +31,26 @@ class App extends React.Component {
             />
           </div>
         </div>
+        
         <ParallaxLayer offset={0} speed={1} style={{ backgroundColor: '#805E73' }}/> 
         
         <ParallaxLayer offset={0.2} speed={0.9} factor={3}>
-          <img className="Container__images" src="https://brandemia.org/sites/default/files/sites/default/files/grupo_imagen_logo.jpg"/>
-          <div className="Container__images">
-            <div className="Typos__titles">
-              <h1> Convertirse en ingeniero en multimedia </h1>
-            </div>
+          
+          <div className="Container__images">            
+            <img className="img-fluid" src="https://brandemia.org/sites/default/files/sites/default/files/grupo_imagen_logo.jpg"/>
           </div>
+          <div className="container Container__text">
+            <h1 className="Typos__titles" style={{zIndex:"5"}}>
+                  Convertirse en ingeniero en multimedia
+            </h1>
+          </div>
+          
         </ParallaxLayer> 
         
-        <ParallaxLayer offset={0} speed={0} factor={3}
-        style={{ backgroundImage: url('stars', true),
-        backgroundSize: 'cover' }} />
-
         <ParallaxLayer
           offset={0}
           speed={0.2}
-          style={{ position: 'relative' }}>
+          style={{ position: 'relative' }}>            
             <ParticlesScreen/>
         </ParallaxLayer>
 

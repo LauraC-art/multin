@@ -68,15 +68,31 @@ body {
 }
 
 .Container{
+  display: flex;
+  position: absolute;
+  justify-content: center;
   &__images{
-    position: absolute;
+    
   }
+
+  &__text{
+  }
+  
 }
 
 .Typos{
   &__titles{
-    height: 100%;
-    font-size: large;
+    position: absolute;
+    font-family: 'Raleway';
+    font-size: 8vw;
     color: #ff737e;
+    
+    align-self: center;
+    padding-left: 30px;
+    padding-top: 15px;
+  }
+
+  &__subtitles{
+    color: #0000;
   }
 }
