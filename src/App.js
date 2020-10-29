@@ -33,9 +33,9 @@ class App extends React.Component {
           </div>
         </div>
         
-        <ParallaxLayer offset={0} speed={1} style={{ backgroundColor: '#805E73' }}/> 
+        <ParallaxLayer offset={0.2} speed={1} style={{ backgroundColor: '#805E73' }}/> 
 
-        <ParallaxLayer offset={0.2} speed={0.9} factor={3}>
+        <ParallaxLayer offset={0.2} speed={1} factor={0}>
           
           <div className="Container__images">            
             <img className="img-fluid" src="https://brandemia.org/sites/default/files/sites/default/files/grupo_imagen_logo.jpg"/>
