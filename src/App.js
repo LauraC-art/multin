@@ -16,7 +16,7 @@ class App extends React.Component {
 
         {/*Página 2: Scroll horizontal*/}
       <div>
-        <ParallaxLayer offset={0.5} speed={-0.5}
+        <ParallaxLayer offset={0.5} speed={0}
         factor={1}
         style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
           
@@ -35,8 +35,8 @@ class App extends React.Component {
 
         {/*Página 3: Scroll horizontal*/}
         <div>
-        <ParallaxLayer offset={2} speed={1}
-        factor={3}
+        <ParallaxLayer offset={2} speed={3}
+        factor={1}
         style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
 
         <div>
@@ -57,7 +57,7 @@ class App extends React.Component {
         {/*Página 1: Vídeo*/}
         <ParallaxLayer
           offset={0}
-          speed={2}
+          speed={3}
           factor={1}>              
           <div>
             <div style={{
