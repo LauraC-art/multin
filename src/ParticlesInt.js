@@ -23,6 +23,7 @@ export const ParticlesScreen = (props) => {
           particles: {
             move: {
               speed: 0.5,
+              radius:5
             },
             number: {
               value: 20,
@@ -53,7 +54,7 @@ export const ParticlesScreen = (props) => {
                 enable: true,
               },
               onclick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
             },

@@ -7,13 +7,29 @@ import "./App.scss"
 // Little helpers ...
 /*asdasd*/
 const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
-
+const a=["https://www.itconsultors.com/images/blog/Realidad-virtual-con-gafas.jpg",""];
 class App extends React.Component {
   render () {
     return (
       <Parallax ref={ref => (this.parallax = ref)} pages={3}>
         
-        <ParallaxLayer offset={0} speed={1} factor={0}>
+        <ParallaxLayer offset={0.9} speed={0.1} style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
+            <div className="Container__images">            
+                <img className="img-fluid"
+                src={a[0]}/>
+                <div className="container Container__text">
+                  <h1 className="Typos__titles" style={{zIndex:"5"}}>
+                        Convertirse en <b>ingeniero en multimedia</b>
+                  </h1>
+                </div>
+              </div>                           
+            </ParallaxLayer> 
+        
+        <ParallaxLayer
+          offset={0}
+          speed={2}>
+            
+        
           <div>
             <div style={{
               position: "relative",
@@ -33,33 +49,14 @@ class App extends React.Component {
               />
             </div>
           </div>
-        </ParallaxLayer>
-        
-        
-
-            <ParallaxLayer offset={1} speed={2} style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
-              
-              <div className="Container__images">            
-                <img className="img-fluid"
-                src="https://brandemia.org/sites/default/files/sites/default/files/grupo_imagen_logo.jpg"/>
-                <div className="container Container__text">
-                <h1 className="Typos__titles" style={{zIndex:"5"}}>
-                      Convertirse en <b>ingeniero en multimedia</b>
-                </h1>
-              </div>
-              </div>
-              
-              
-              
-            </ParallaxLayer> 
-          
+        </ParallaxLayer>        
         
 
         <ParallaxLayer
           offset={0}
           speed={0.2}
           style={{ position: 'absolute', zIndex:'-5' }}>            
-            <ParticlesScreen/>
+            {/*}<ParticlesScreen/>*/}
         </ParallaxLayer>
 
       </Parallax>
