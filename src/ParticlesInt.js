@@ -25,7 +25,7 @@ export const ParticlesScreen = (props) => {
               speed: 0.5,
             },
             number: {
-              value: 35,
+              value: 20,
               density: {
                 enable: true,
                 value_area: 800,
@@ -39,9 +39,9 @@ export const ParticlesScreen = (props) => {
             },
             line_linked: {
               enable: true,
-              distance: 150,
-              color: "#696969",
-              opacity: 0.4,
+              distance: 200,
+              color: "#fff",
+              opacity: 1,
               width: 1,
             },
           },

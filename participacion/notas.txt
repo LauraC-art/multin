@@ -1,0 +1,22 @@
+Trabajar todos en equipo
+GitHub:
+React -> Hacer el máster con un archivo base de react ya funcionando y sacar las ramas
+Y fusionarlo con cuidado !por el tema de librerías
+
+Box shadow.
+Ingeniero EN multimedia.
+Texto animado scrolling.
+inMulti debe ser un elemento más protagonista:
+	Carga.
+	Inicio del vídeo.
+	En la navegación.
+Barra de navegación -> podemos cambiar los cosos de al principio y dentro del scroll
+vamos poniendo conceptos.
+Logo fondo con opacidad.
+_____
+Parcial mañana: 1.5h
+Rewind: pj's 50's 2h
+Simu: péndulo. 1h
+Rewind: cinta 60's 2h
+Imágs: Códigos. 2h
+Simu: péndulo 1h (por si acaso)
