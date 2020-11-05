@@ -18,7 +18,7 @@ class App extends React.Component {
       <div>
         <ParallaxLayer offset={0.5} speed={-0.3}
         factor={1}
-        style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
+        style={{  }}>
           
           <div className="Container__images">      
             <img className="img-fluid"
@@ -35,9 +35,9 @@ class App extends React.Component {
 
         {/*Página 3: Scroll horizontal*/}
         <div>
-        <ParallaxLayer offset={2} speed={3}
+        <ParallaxLayer offset={2} speed={-0.3}
         factor={1}
-        style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
+        style={{  }}>
 
         <div>
             <div style={{
@@ -60,7 +60,7 @@ class App extends React.Component {
         {/*Página 1: Vídeo*/}
         <ParallaxLayer
           offset={0}
-          speed={3}
+          speed={5}
           factor={1}>              
           <div>
             <div style={{
