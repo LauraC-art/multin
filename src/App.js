@@ -16,7 +16,7 @@ class App extends React.Component {
 
         {/*Página 2: Scroll horizontal*/}
       <div>
-        <ParallaxLayer offset={0.5} speed={0}
+        <ParallaxLayer offset={0.5} speed={-0.3}
         factor={1}
         style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
           
