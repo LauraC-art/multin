@@ -12,8 +12,8 @@ class App extends React.Component {
   render () {
     return (
       <Parallax ref={ref => (this.parallax = ref)} pages={3}>
-        
-        <ParallaxLayer offset={0.9} speed={0.1} style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
+        <div>
+        <ParallaxLayer offset={0.4} speed={0.1} style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
             <div className="Container__images">            
                 <img className="img-fluid"
                 src={a[0]}/>
@@ -23,7 +23,8 @@ class App extends React.Component {
                   </h1>
                 </div>
               </div>                           
-            </ParallaxLayer> 
+            </ParallaxLayer>
+            </div>
         
         <ParallaxLayer
           offset={0}
