@@ -85,7 +85,7 @@ class App extends React.Component {
           speed={0.2}
           style={{ position: 'absolute', zIndex:'-5' }}
           factor={1}>            
-              {/*<ParticlesScreen/>*/}
+              <ParticlesScreen/>
         </ParallaxLayer>
 
       </Parallax>
