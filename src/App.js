@@ -40,12 +40,15 @@ class App extends React.Component {
         style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
 
         <div>
-            <div style={{}}>
+            <div style={{
+              padding: '25px'
+            }}>
 
               <ReactPlayer
                 url='https://www.youtube.com/watch?v=3VdYIIATMu8'
                 style={{
-                  position: "absolute"}}
+                  position: "absolute"
+                }}
                 width='50%'
               />
             </div>
