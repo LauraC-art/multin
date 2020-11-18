@@ -23,10 +23,9 @@ export const ParticlesScreen = (props) => {
           particles: {
             move: {
               speed: 0.5,
-              radius:5
             },
             number: {
-              value: 20,
+              value: 35,
               density: {
                 enable: true,
                 value_area: 800,
@@ -40,9 +39,9 @@ export const ParticlesScreen = (props) => {
             },
             line_linked: {
               enable: true,
-              distance: 200,
-              color: "#fff",
-              opacity: 1,
+              distance: 150,
+              color: "#696969",
+              opacity: 0.4,
               width: 1,
             },
           },
@@ -54,7 +53,7 @@ export const ParticlesScreen = (props) => {
                 enable: true,
               },
               onclick: {
-                enable: false,
+                enable: true,
                 mode: "push",
               },
             },
