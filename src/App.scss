@@ -1,13 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 * {
  
 }
 //---------------------------------------
+.black {
+  background-color: black;
+}
 .parallax {
   /* The image used */
-
-  background-image: url('img_parallax.jpg');
+  
+  //background-image: url('img_parallax.jpg');
+  background-color: rgb(0, 4, 15);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,4,15,1) 35%);
 
   /* Full height */
   height: 50em; 
@@ -21,9 +26,9 @@
 //--------------------------------------
 //menu_lat
 .columizq{
-  background-color:#805E73;
   padding: 0;
   margin: 0;
+  padding: 0px !important;
 }
 .sidebar {
   height:100%;
@@ -34,11 +39,64 @@
   font-weight: bold;
  
 }
+//Títulos------
+.fuentes{
+  &__titles-multi{
+    &__center{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 10% 0px 85px;
+    }  
+    &__style{
+      color: blanchedalmond;
+      font-family: 'Raleway', sans-serif;
+    }
+    &__titles{
+      font-size: 10vw;
+    }
+  }
+}
+//-------------Contenido
+.contenido{ 
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,4,15,1) 35%);
+}
 //-------------------
-//carousel
-.carousel-inner img {
+//Slider
+.simple-trans-main > div {
+  cursor: pointer;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+  font-size: 25em;
+  text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
+  z-index: 10;
+}
+//Tarjetas de vídeo-----
+.card {
+  width: 45ch;
+  height: 45ch;
+  background: grey;
+  border-radius: 5px;
+  background-image: url(https://drscdn.500px.org/photo/435236/q%3D80_m%3D1500/v2?webp=true&sig=67031bdff6f582f3e027311e2074be452203ab637c0bd21d89128844becf8e40);
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  opacity:0.7;
+}
+.card:hover + .subtitles {
+  opacity: 1;
 }
 //---------------------------------------
 body {
@@ -58,12 +116,14 @@ background-color:#805E73;
   height:30em; 
 }
 
+.videos{
+  display: flex;
+  flex-direction: column;
+}
 
 .Container{
-  display: flex;
- 
+  display: flex; 
   justify-content: center;
-
 }
 .Typos{
   &__titles{
@@ -76,8 +136,11 @@ background-color:#805E73;
     padding-left: 30px;
     padding-top: 15px;
   }
-
-  &__subtitles{
-    color: #0000;
-  }
+}
+.subtitles{
+  opacity: 0;
+}
+.info {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 }

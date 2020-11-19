@@ -35,12 +35,12 @@ export const ParticlesScreen = (props) => {
               value: 2.5,
             },
             color: {
-              value: "#696969",
+              value: "#ffff",
             },
             line_linked: {
               enable: true,
               distance: 150,
-              color: "#696969",
+              color: "#ffff",
               opacity: 0.4,
               width: 1,
             },
