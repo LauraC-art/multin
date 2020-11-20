@@ -43,7 +43,7 @@ class App extends React.Component {
     <div class="fuentes__titles-multi__center parallax container-fluid" style={{ zIndex:'50'}}>
       <div>
         <h1 className="fuentes__titles-multi__style fuentes__titles-multi__titles">
-        Convertirse en ingeniero multimedia</h1>
+        Estudiar ingeniería en multimedia</h1>
       </div>
     </div>
 
