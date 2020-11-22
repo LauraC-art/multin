@@ -1,9 +1,11 @@
 import React from 'react'
+//Los componentes kul
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
-import { ParticlesScreen } from './ParticlesInt'
-import { Slider } from './slider.js'
-import { Card } from './videoCards.js'
+import { ParticlesScreen } from './app/components/ParticlesInt'
+import { Slider } from './app/components/slider.js'
+import { Card } from './app/components/videoCards.js'
 import ReactPlayer from 'react-player'
+//Estilos
 import "./App.scss";
 
 const vidBienvenida="https://www.youtube.com/watch?v=3VdYIIATMu8";
@@ -17,7 +19,7 @@ const redes = {
   linkedin: "https://co.linkedin.com/school/universidad-militar-nueva-granada/"
 };
 
-class App extends React.Component {
+class AppHome extends React.Component {
   
   render () {
     return (
@@ -87,13 +89,9 @@ class App extends React.Component {
     </div>
   </div>
     </Parallax>
-  </div>
-
-    
-
- 
+  </div> 
     );
   }
 }
 
-export default App;
+export default AppHome;

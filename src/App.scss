@@ -62,41 +62,38 @@
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,4,15,1) 35%);
 }
 //-------------------
-//Slider
-.simple-trans-main > div {
-  cursor: pointer;
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 800;
-  font-size: 25em;
-  text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
-  z-index: 10;
-  background-size: cover !important;
-  background-position: center !important;
-}
+
 //Tarjetas de vídeo-----
 .card {
   width: 45ch;
   height: 45ch;
   background: grey;
   border-radius: 5px;
-  background-image: url(https://drscdn.500px.org/photo/435236/q%3D80_m%3D1500/v2?webp=true&sig=67031bdff6f582f3e027311e2074be452203ab637c0bd21d89128844becf8e40);
   background-size: cover;
   background-position: center center;
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
   will-change: transform;
-  border: 15px solid #7DFFB8;
+  border: 15px solid #08FF7D;
   cursor: pointer;
+}
+
+//Imagen en cada tarjeta
+.uno{
+  background-image: url(https://static1.bmbfcluster.de/1/1/8/4_6077ddaa413435e/1184meg_e11d22113f60ffb.jpg);
+}
+
+.dos{
+  background-image: url(https://www.utel.edu.mx/blog/wp-content/uploads/2015/07/shutterstock_134496833.jpg);
+}
+
+.tres{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/UMNG_Campus_Nueva_Granada_-_Acceso_Principal.jpg/1200px-UMNG_Campus_Nueva_Granada_-_Acceso_Principal.jpg);
 }
 
 .card:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
+
 //--Link a los vídeos en las cards-------------
 .url-links{
   color: #08FF7D;

@@ -1,11 +1,11 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
-import './App.scss'
+import '../styles/videos.scss'
 
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
 const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
-//links de los vídeos en las tarjetas:
 
+//links de los vídeos en las tarjetas:
 const videos={
   lqNecesitas:"https://www.youtube.com/watch?v=nF9EAQRgAbA",
   futuro:"https://www.youtube.com/watch?v=OLstu58Vevg",
@@ -22,10 +22,12 @@ export const Card = () => {
             justifyContent: 'center',
             padding:'20px'}}>
             <animated.div
-            class="card"
+            class="card uno"
             onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
             onMouseLeave={() => set({ xys: [0, 0, 1] })}
-            style={{ transform: props.xys.interpolate(trans), display:'flex', justifyContent:'center', alignItems:'center'}}
+            style={{ transform: props.xys.interpolate(trans), display:'flex', justifyContent:'center', alignItems:'center',
+            boxShadow: 'inset 100px 150px 100px 100px rgba(0, 0, 0, 0.9)'
+            }}
             ><a class="url-links" href={videos.lqNecesitas}><h1>Lo que necesitas</h1></a>
             </animated.div>
           </div>
@@ -35,10 +37,11 @@ export const Card = () => {
             justifyContent: 'center',
             padding:'20px'}}>
             <animated.div
-            class="card"
+            class="card dos"
             onMouseMove={({ clientX: x, clientY: y }) => set({ x1y1s1: calc(x, y) })}
             onMouseLeave={() => set({ x1y1s1: [0, 0, 1] })}
-            style={{ transform: props.x1y1s1.interpolate(trans), display:'flex', justifyContent:'center', alignItems:'center'
+            style={{ transform: props.x1y1s1.interpolate(trans), display:'flex', justifyContent:'center', alignItems:'center',
+            boxShadow: 'inset 100px 150px 100px 100px rgba(0, 0, 0, 0.9)'
             }}
             >
               <a class="url-links" href={videos.futuro}>
@@ -51,10 +54,11 @@ export const Card = () => {
             justifyContent: 'center',
             padding:'20px'}}>
             <animated.div
-            class="card"
+            class="card tres"
             onMouseMove={({ clientX: x, clientY: y }) => set({ x2y2s2: calc(x, y) })}
             onMouseLeave={() => set({ x2y2s2: [0, 0, 1] })}
-            style={{ transform: props.x2y2s2.interpolate(trans), display:'flex', justifyContent:'center', alignItems:'center'
+            style={{ transform: props.x2y2s2.interpolate(trans), display:'flex', justifyContent:'center', alignItems:'center',
+            boxShadow: 'inset 100px 150px 100px 100px rgba(0, 0, 0, 0.9)'
             }}
             >
               <a class="url-links" href={videos.clHaras}>
