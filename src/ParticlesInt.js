@@ -53,7 +53,7 @@ export const ParticlesScreen = (props) => {
                 enable: true,
               },
               onclick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
             },

@@ -48,7 +48,7 @@ class App extends React.Component {
 
   <div>
 
-    <div class="fuentes__titles-multi__center parallax container-fluid" style={{ zIndex:'50'}}>
+    <div class="fuentes__titles-multi__center parallax container-fluid" style={{ height:'auto'}}>
       <div>
         <h1 className="fuentes__titles-multi__style fuentes__titles-multi__titles">
         Estudiar ingeniería en multimedia</h1>
@@ -64,11 +64,11 @@ class App extends React.Component {
           factor={1}>            
               <ParticlesScreen/>
         </ParallaxLayer>
-        <div class="" style={{position:'relative', height:'600px'}}>          
+        <div style={{zIndex:'7',position:'relative', height:'600px'}}>          
           <Slider/>
         </div>
 
-        <div class="videos">
+        <div class="videos" style={{position:'relative',zIndex:'50'}}>
           <div style={{padding:"100px"}}>
             <Card/>
           </div>

@@ -46,14 +46,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0px 10% 0px 85px;
+      padding: 120px 20px 45px 45px;
     }  
     &__style{
       color: blanchedalmond;
       font-family: 'Raleway', sans-serif;
     }
     &__titles{
-      font-size: 10vw;
+      font-size: 11vw;
     }
   }
 }
@@ -75,6 +75,8 @@
   font-size: 25em;
   text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
   z-index: 10;
+  background-size: cover !important;
+  background-position: center !important;
 }
 //Tarjetas de vídeo-----
 .card {
@@ -154,7 +156,7 @@ background-color:#805E73;
 //------------------
 //REDES SOCIALES
 #redessociales {
-  filter:invert(100%);
+  filter:hue-rotate(30deg);;
   cursor: pointer;
   width: 64px;
   height: 64px;
@@ -164,7 +166,7 @@ background-color:#805E73;
 }
 
 .smedia {
-  filter:invert(100%) !important;
+  filter:hue-rotate(-30deg);
   position: absolute;
   -webkit-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1), opacity 1s linear;
   -moz-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1),opacity 1s linear;
