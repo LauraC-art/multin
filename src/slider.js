@@ -2,11 +2,15 @@ import React, { useState, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
 import './App.scss'
 
+const sliderImgs=[
+  'src/IMG/profile_1.gif',
+];
+
 const pages = [
-  ({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}><img src="http://qnimate.com/wp-content/uploads/2014/03/images2.jpg"/></animated.div>,
+  ({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}><img src={sliderImgs[0]}/></animated.div>,
   ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}>B</animated.div>,
   ({ style }) => <animated.div style={{ ...style, background: 'lightgreen' }}>C</animated.div>,
-]
+];
 
 export const Slider = () => {
     const [index, set] = useState(0)

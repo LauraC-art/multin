@@ -1,14 +1,22 @@
 import React from 'react'
-import { animation } from './anim'
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 import { ParticlesScreen } from './ParticlesInt'
 import { Slider } from './slider.js'
 import { Card } from './videoCards.js'
 import ReactPlayer from 'react-player'
 import "./App.scss";
-// Little helpers ...
-const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
-//Animar on scroll
+
+const vidBienvenida="https://www.youtube.com/watch?v=3VdYIIATMu8";
+
+const redes = {
+  webOfi:"https://www.umng.edu.co/programas/pregrados/ingenieria-multimedia",
+  facebook: "https://www.facebook.com/lamilitar",
+  twitter: "https://twitter.com/lamilitar",
+  instagram: "https://www.instagram.com/unimilitar/",
+  youtube: "https://www.youtube.com/user/militarnuevagranada",
+  linkedin: "https://co.linkedin.com/school/universidad-militar-nueva-granada/"
+};
+
 class App extends React.Component {
   
   render () {
@@ -24,7 +32,7 @@ class App extends React.Component {
           position: "relative",
           paddingTop: "56.25%" }}>
           <ReactPlayer
-            url='https://www.youtube.com/watch?v=3VdYIIATMu8'
+            url={vidBienvenida}
             style={{
               position: "absolute",
               top: 0,
@@ -56,20 +64,28 @@ class App extends React.Component {
           factor={1}>            
               <ParticlesScreen/>
         </ParallaxLayer>
-      <div class="" style={{position:'relative', height:'600px'}}>          
-        <Slider/>
-      </div>
+        <div class="" style={{position:'relative', height:'600px'}}>          
+          <Slider/>
+        </div>
 
-    <div class="videos">
-      <div style={{padding:"100px"}}>
-        <Card/>
+        <div class="videos">
+          <div style={{padding:"100px"}}>
+            <Card/>
+          </div>
+        </div>
       </div>
-    </div>
+      
+      <div style={{padding: '0px 0px 25px 25px'}}>
+        <div id="redessociales">
+          <a class="smedia facebook" href={redes.facebook}>Uno</a>
+          <a class="smedia twitter" href={redes.twitter}>Dos</a>
+          <a class="smedia instagram" href={redes.instagram}>Tres</a>
+          <a class="smedia youtube" href={redes.youtube}>Cuatro</a>
+        </div>
       </div>
-
+    
     </div>
   </div>
-
     </Parallax>
   </div>
 
