@@ -6,7 +6,7 @@ import { Slider } from './app/components/slider.js'
 import { Card } from './app/components/videoCards.js'
 import ReactPlayer from 'react-player'
 //Estilos
-import "./App.scss";
+import "./App.scss"
 
 const vidBienvenida="https://www.youtube.com/watch?v=3VdYIIATMu8";
 
@@ -71,13 +71,17 @@ class AppHome extends React.Component {
         </div>
 
         <div class="videos" style={{position:'relative',zIndex:'50'}}>
-          <div style={{padding:"100px"}}>
+          <div style={{padding:"80px"}}>
             <Card/>
           </div>
         </div>
       </div>
       
-      <div style={{padding: '0px 0px 25px 25px'}}>
+      <div
+      style={{padding: '0px 0px 25px 25px',          
+      display: 'flex',
+      justifyContent: 'center'
+      }}>
         <div id="redessociales">
           <a class="smedia facebook" href={redes.facebook}>Uno</a>
           <a class="smedia twitter" href={redes.twitter}>Dos</a>

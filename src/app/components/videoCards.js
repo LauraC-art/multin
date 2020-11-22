@@ -22,7 +22,7 @@ export const Card = () => {
             justifyContent: 'center',
             padding:'20px'}}>
             <animated.div
-            class="card uno"
+            class="cardV uno"
             onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
             onMouseLeave={() => set({ xys: [0, 0, 1] })}
             style={{ transform: props.xys.interpolate(trans), display:'flex', justifyContent:'center', alignItems:'center',
@@ -37,7 +37,7 @@ export const Card = () => {
             justifyContent: 'center',
             padding:'20px'}}>
             <animated.div
-            class="card dos"
+            class="cardV dos"
             onMouseMove={({ clientX: x, clientY: y }) => set({ x1y1s1: calc(x, y) })}
             onMouseLeave={() => set({ x1y1s1: [0, 0, 1] })}
             style={{ transform: props.x1y1s1.interpolate(trans), display:'flex', justifyContent:'center', alignItems:'center',
@@ -54,7 +54,7 @@ export const Card = () => {
             justifyContent: 'center',
             padding:'20px'}}>
             <animated.div
-            class="card tres"
+            class="cardV tres"
             onMouseMove={({ clientX: x, clientY: y }) => set({ x2y2s2: calc(x, y) })}
             onMouseLeave={() => set({ x2y2s2: [0, 0, 1] })}
             style={{ transform: props.x2y2s2.interpolate(trans), display:'flex', justifyContent:'center', alignItems:'center',
