@@ -7,8 +7,10 @@ import { Card } from './app/components/videoCards.js'
 import ReactPlayer from 'react-player'
 //Estilos
 import "./App.scss"
+//Página de carga
+import { LoadPage } from './app/pages/loadingPage.js'
 
-const vidBienvenida="https://www.youtube.com/watch?v=3VdYIIATMu8";
+const vidBienvenida="https://www.youtube.com/watch?v=-zKE04TVxGk";
 
 const redes = {
   webOfi:"https://www.umng.edu.co/programas/pregrados/ingenieria-multimedia",
@@ -20,8 +22,34 @@ const redes = {
 };
 
 class AppHome extends React.Component {
-  
+  //Página de carga   
+  constructor(props) {
+    super(props)
+    this.state = { 
+      loading: true,
+    }
+  }
+  componentDidMount() {
+    this.timerHandle = setTimeout(() => this.setState({ loading: false }), 3500); 
+  }
+
+  componentWillUnmount(){
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 3500;
+    }
+  }
+  //Página principal
+
   render () {
+    if (this.state.loading){
+      return (
+        <div>
+          <LoadPage/>
+        </div>
+      )
+    } else{
+    //
     return (
       
     <div>   
@@ -95,6 +123,7 @@ class AppHome extends React.Component {
     </Parallax>
   </div> 
     );
+    }
   }
 }
 
