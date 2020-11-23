@@ -18,3 +18,5 @@ Documentación: https://www.npmjs.com/package/react-player
 4.
 --save react-spinners-kit
 Documentación: https://www.npmjs.com/package/react-spinners-kit
+
+5.
