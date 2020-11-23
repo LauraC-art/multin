@@ -1,0 +1,20 @@
+Los npm installs :V
+
+1.
+
+react-spring
+Documentación: https://www.react-spring.io/
+
+2.
+
+react-particles-js
+El que tú tenías :v
+
+3.
+
+react-player
+Documentación: https://www.npmjs.com/package/react-player
+
+4.
+--save react-spinners-kit
+Documentación: https://www.npmjs.com/package/react-spinners-kit

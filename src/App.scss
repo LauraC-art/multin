@@ -1,43 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-* {
- 
-}
 //---------------------------------------
 .black {
   background-color: black;
 }
 .parallax {
-  /* The image used */
-  
-  //background-image: url('img_parallax.jpg');
   background-color: rgb(0, 4, 15);
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,4,15,1) 35%);
-
-  /* Full height */
-  height: 50em; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-//--------------------------------------
-//menu_lat
-.columizq{
-  padding: 0;
-  margin: 0;
-  padding: 0px !important;
-}
-.sidebar {
-  height:100%;
-}
-
-.nav {
-  text-align: left;
-  font-weight: bold;
- 
 }
 //Título------
 .fuentes{
