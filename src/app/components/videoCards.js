@@ -7,8 +7,8 @@ const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg)
 
 //links de los vídeos en las tarjetas:
 const videos={
-  lqNecesitas:"https://www.youtube.com/watch?v=nF9EAQRgAbA",
-  futuro:"https://www.youtube.com/watch?v=OLstu58Vevg",
+  lqNecesitas:"https://www.youtube.com/watch?v=kYPqkkOvfLI&feature=youtu.be",
+  futuro:"https://www.youtube.com/watch?v=OLstu58Vevg", //falta este :v
   clHaras:"https://www.umng.edu.co/programas/pregrados/ingenieria-multimedia"
 }
 
