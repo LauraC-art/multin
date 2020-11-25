@@ -6,9 +6,10 @@ const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWid
 const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 //links de los vídeos en las tarjetas:
+//Aquí los vídeos ya están completos
 const videos={
   lqNecesitas:"https://www.youtube.com/watch?v=kYPqkkOvfLI&feature=youtu.be",
-  futuro:"https://www.youtube.com/watch?v=OLstu58Vevg", //falta este :v
+  futuro:"https://www.youtube.com/watch?v=9HmM8Ya0Ac0&feature=youtu.be",
   clHaras:"https://www.umng.edu.co/programas/pregrados/ingenieria-multimedia"
 }
 
